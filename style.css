@@ -27,3 +27,32 @@
 ::-webkit-scrollbar {
   display: none;
 }
+
+body {
+  background-color: rgb(40, 40, 40);
+  color: antiquewhite;
+}
+.main-container {
+  background-image: url(./images/pexels-catiamatos-1072179.jpg);
+  height: 90vh;
+  color: aliceblue;
+  background-position: 100%;
+  background-size: cover;
+}
+span {
+  display: flex;
+  font-size: 24px;
+}
+span p {
+  color: red;
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+  font-family: cursive;
+}
+span a {
+  text-decoration: none;
+  color: antiquewhite;
+  transition: color 0.3s ease;
+}
