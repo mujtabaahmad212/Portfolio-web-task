@@ -141,3 +141,105 @@ ul li a {
   cursor: pointer;
  }
  }
+ 
+ 
+/* service section  */
+
+.sec-service {
+  background-image: url(./images/pexels-adrien-olichon-1257089-2387793.jpg);
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.service-div {
+  margin: 20px;
+  
+  height: 90vh;
+  border-radius: 20px;
+  box-shadow: 0px 0px 20px 1px rgb(93, 93, 93);
+  backdrop-filter: blur(5px);
+  width: 100%;
+  overflow: scroll;
+  background: linear-gradient(#212121, #212121) padding-box,
+              linear-gradient(145deg, transparent 35%,#e81cff, #40c9ff) border-box;
+}
+.service-text {
+  text-align: center;
+  margin: 20px;
+  overflow: scroll;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.service-text h1 {
+  font-size: 60px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: lighter;
+  text-transform: uppercase;
+
+
+
+  &&::first-letter {
+    color: #ff0000;
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+   
+}}
+.service-text p {
+  width: 500px;
+  margin-top: 20px;
+  text-transform: capitalize;
+}
+
+.service-cards {
+  display: flex;
+  margin-top: 30px;
+  justify-content: space-around;
+  flex-wrap: wrap;
+
+}
+.card {
+  width: 300px;
+  border-radius: 1rem;
+  background-color: #4158D0;
+  background-image: linear-gradient(43deg, #e14c4c 0%, #4f83ed 46%, #d755c6 100%);
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+    rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+    rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px,
+    rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
+    rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+ 
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+  color: rgb(240, 240, 240);
+  box-shadow: rgb(0, 0, 0) 5px 5px 20px 1px;
+}
+.card img {
+  width: 40px;
+  border-radius: 20px;
+  margin: 20px 0px 0px 20px;
+  border: none;
+  box-shadow: rgb(0, 0, 0) 5px 5px 20px 1px;
+  transition: 0.3s ease-in-out;
+  &&:hover {
+    transform: scale(1.05);
+    transform: translateY(-5px);
+    transition: 0.3s ease-in-out;
+  }
+}
+.card p {
+  margin-left: 10px;
+  margin-bottom: 20px;
+  font-size: small;
+}
+.card h1 {
+  text-transform: uppercase;
+  margin-left: 10px;
+}
