@@ -56,3 +56,49 @@ span a {
   color: antiquewhite;
   transition: color 0.3s ease;
 }
+
+li {
+  list-style: none;
+  margin: 0;
+}
+ul {
+  display: flex;
+  justify-content: space- between;
+  align-items: center;
+  gap: 20px;
+}
+ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+.navbar {
+  overflow: scroll;
+  top: 0;
+  z-index: 100;
+  position: sticky;
+  color: white;
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+}
+.main-content {
+  overflow: hidden;
+
+  margin-left: 200px;
+}
+.main-content h1 {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  text-transform: uppercase;
+  font-size: 60px;
+  margin-top: 100px;
+}
+.main-container h1 p {
+  color: #ff4646;
+  text-shadow: 0px 0px 10px rgb(255, 0, 0),
+   0px 0px 20px rgb(255, 0, 0),
+   0px 0px 40px rgb(255, 0, 0),
+   0px 0px 80px rgb(255, 0, 0);
+}
