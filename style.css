@@ -531,8 +531,11 @@ box-shadow: rgba(0, 0, 0, 0.244) 0px 0px 20px 10px;
 
     /* Small Screen */
     @media(max-width:1000px) {
-  
-      /* Navigation Bar */
+  .service-cards{
+   justify-content: space-around;
+
+  }
+     
    
    
    }
@@ -559,6 +562,9 @@ box-shadow: rgba(0, 0, 0, 0.244) 0px 0px 20px 10px;
   .sec-service h1{
     font-size: 40px;
    
+  }
+  .service-cards{
+    justify-content: space-around;
   }
   .card{
 width: 80%;
