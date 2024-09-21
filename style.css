@@ -56,15 +56,19 @@ span a {
   color: antiquewhite;
   transition: color 0.3s ease;
 }
+/* hamburger */
+
+
 
 li {
   list-style: none;
-  margin: 0;
+
 }
 ul {
   display: flex;
   justify-content: space- between;
   align-items: center;
+  
   gap: 20px;
 }
 ul li a {
@@ -74,10 +78,12 @@ ul li a {
   text-transform: capitalize;
 }
 .navbar {
-  overflow: scroll;
+  /* overflow: scroll; */
   top: 0;
   z-index: 100;
   position: sticky;
+  background-color: #01002c;
+  align-items: center;
   color: white;
   padding: 10px;
   display: flex;
@@ -141,6 +147,10 @@ ul li a {
  }
  }
  
+
+ 
+
+
  
  
 /* service section  */
@@ -150,8 +160,8 @@ ul li a {
   background-size: cover;
   height: 100vh;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-between;
+  
   overflow: hidden;
 }
 
@@ -203,6 +213,7 @@ ul li a {
   margin-top: 30px;
   justify-content: space-around;
   flex-wrap: wrap;
+  gap: 20px;
 
 }
 .card {
@@ -217,10 +228,11 @@ ul li a {
     rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px,
     rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
     rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
- 
+
   display: flex;
   flex-direction: column;
-  gap: 10px;
+ gap: 20px;
+  
   margin-bottom: 20px;
   color: rgb(240, 240, 240);
   box-shadow: rgb(0, 0, 0) 5px 5px 20px 1px;
@@ -510,5 +522,293 @@ box-shadow: rgba(0, 0, 0, 0.244) 0px 0px 20px 10px;
 }
 
 
+/* Media Queries for Tablets */
+@media (min-width: 600px) {
+  .navbar ul {
+    display: flex;
+    justify-content: space-around;
+    gap: 15px;
+  } 
+
+  .main-container h1 {
+    font-size: 3.5rem;
+  }
+
+  .sec-service {
+    flex-direction: row;
+  }
+
+  .service-cards {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
+
+/* Media Queries for Desktops */
+@media (min-width: 1024px) {
+  .navbar ul {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .main-container h1 {
+    font-size: 4rem;
+  }
+
+  .sec-service {
+    flex-direction: row;
+  }
+
+  .service-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .card {
+    width: 22%;
+  }
+
+  .about-text {
+    width: 70%;
+  }
+}
 
 
+
+    /* Small Screen */
+    @media(max-width:1000px) {
+  
+      /* Navigation Bar */
+   
+   
+   }
+   
+   /* Tab Screens */
+   @media(max-width:780px) {
+     
+   }
+   
+   @media(max-width:600px) {
+     .main-content{
+      margin-left: 10px;
+    
+    }
+    
+    .sec-about{
+      flex-direction: column;
+      overflow: visible;
+      height: auto;
+      align-items: center;
+
+    }
+    .navbar span {
+      font-size: 20px;
+    }
+    span p{
+      font-size: 20px;
+
+    }
+    .navbar{
+      gap: 10px;
+      overflow: visible;
+    }
+
+   ul{
+    overflow: scroll;
+   }
+    .about-text{
+      width: 100%;
+    text-align: center;
+   
+    }
+    .about-text h1{
+     margin:0 auto;
+    }
+    .about-text a{
+      margin: 0 auto;
+
+    }
+    
+    .conract-content{
+      flex-direction: column;
+      overflow: visible;
+      height: auto;
+      align-items: center;
+    }
+       
+   }
+   
+   
+    /* Mobile  */
+    @media(max-width:400px) {
+      .navbar span {
+        font-size: 20px;
+      }
+      span p{
+        font-size: 20px;
+
+      }
+      .navbar{
+        gap: 10px;
+        overflow: visible;
+      }
+
+     ul{
+      overflow: scroll;
+     }
+     .about-text{
+      padding: 0px;
+     }
+ 
+    .main-container{
+      margin-left: 0px;
+    height: auto;
+    }
+    .main-content{
+      justify-content: center;
+    }
+    .main-content h1{
+      font-size: 40px;
+      margin-bottom: 20px;
+      padding-left: 10px;
+
+    
+      
+    }
+    .main-content button{
+
+      width: 80%;
+      margin-bottom: 20px;
+
+    }
+
+    .all-projects{
+      width: 100%;
+      margin: 20px;
+      margin-bottom: 20px;
+    }
+    
+    .service-text{
+      width: 100%;
+      overflow: visible;
+      margin: 0;
+    }
+    
+    .service-text p{
+      font-size: 10px;
+      overflow: visible;
+      flex-wrap: wrap;
+      width: 81%;
+     
+      
+     }
+ 
+    }
+    .card{
+      width: 80%;
+    }
+    .sec-about{
+      flex-direction: column;
+      overflow: visible;
+      height: auto;
+      align-items: center;
+   
+     }
+     .about-text{
+      width: 100%;
+    text-align: center;
+    
+    }
+    .about-text h1{
+     margin:0 auto;
+    }
+    .about-text a{
+      margin: 0 auto;
+      margin-top: 10px;
+      font-size: 1rem;
+     }
+     .conract-content{
+      flex-direction: column;
+      overflow: visible;
+      height: auto;
+      align-items: center;
+     }
+    .contact-text{
+      width: 100%;
+    text-align: center;
+    padding: 20px;
+    }
+    .contact-text p{
+      font-size: 1rem;
+     }
+    .address{
+      width: 100%;
+    text-align: center;
+    padding: 20px;
+    }
+    .address p{
+      font-size: 1rem;
+     }
+    .footer{
+      flex-direction: column;
+      
+      height: auto;
+      align-items: center;
+      color: white;
+      text-transform: uppercase;
+      border-radius:100px 0px 10px 0px  ;
+    background-color: #001788;
+    height: 200px;
+    box-shadow: rgba(0, 0, 0, 0.244) 0px 0px 20px 10px;
+    }
+    .footer
+    h1{
+      margin: 10px;
+    &&::first-letter{
+      color: red;
+    }
+    }
+    .email{
+      width: 80%;
+    text-align: center;
+    padding: 20px;
+    }
+    .email h1{
+      &&::first-letter{
+        color: red;
+      }
+    }
+    .phone h1{
+      &&::first-letter{
+        color: red;
+      }
+    }
+    .address h1{
+      &&::first-letter{
+        color: red;
+      }
+    }
+    .phone{
+      width: 80%;
+      text-align: center;
+      padding: 20px;
+    }
+    .email p{
+      font-size: 1rem;
+     }
+    .address{
+      width: 80%;
+    text-align: center;
+    padding: 20px;
+    }
+    .address p{
+      font-size: 1rem;
+     }
+   }
+
+    
+   
+   
+   
